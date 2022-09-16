@@ -1,0 +1,94 @@
+body {
+  background-color:#FEFDFD;}
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FEFDFD;
+    border-bottom: 2px solid #17140d;
+
+  }
+
+  li {
+    float: right;
+  }
+
+  li a .ai {
+    font-size:1.5em;
+}
+
+  li a {
+
+    font-family:"Work Sans";
+    font-size: 100%;
+    display: block;
+    color: #17140d;
+    text-align: center;
+    padding: 2px 16px;
+    text-decoration: none;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #FEFDFD;
+    color: #FFC300;
+
+  }
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 5px;
+}
+
+.center2 {
+  margin: auto;
+  width: 10%;
+  padding: 10px;
+}
+
+
+.mypic {
+  border:3px solid #17140d;
+  box-shadow:10px 10px #17140d;
+  width: 300px;
+}
+
+.myname {
+  font-family:"Sporting Grotesque";
+  margin: 0 auto;
+  font-size: 200%;
+  color: #17140d;
+
+}
+
+.bio {
+  font-family:"Work Sans";
+  margin: 0 auto;
+  font-size: 100%;
+  color: #17140d;
+  border-bottom: 2px solid #17140d;
+
+}
+
+.socialmedia {
+  width:100%;
+
+}
+
+h3 {
+  margin:10px;
+  color: #17140d;
+  padding-left: 50px;
+  font-size: 100%;
+}
+
+
+
+h6 {
+font-family:"Work Sans";
+display:inline-block;
+color:#17140d;
+}
