@@ -120,3 +120,11 @@ ins:hover:after {
   top:-300px;
   left:100px;
 }
+
+#decision:hover:after {
+  content: url("./images/snacks.gif");
+  width:400px;
+  height:400px;
+  top:-300px;
+  left:100px;
+}
