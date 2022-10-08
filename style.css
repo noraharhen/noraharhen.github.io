@@ -26,13 +26,13 @@ body {
   li a {
 
     font-family:"Work Sans";
+    src: url("./WorkSans-Regular.otf")
     font-size: 200%;
     display: block;
     color: #17140d;
     text-align: center;
     padding: 2px 16px;
     text-decoration: none;
-    src: url("../../noraharhen.github.io/WorkSans-Regular.otf") format("opentype");
   }
 
   /* Change the link color to #111 (black) on hover */
@@ -57,20 +57,19 @@ body {
 
 .myname {
   font-family:"Sporting Grotesque";
+  src: url("./SportingGrotesque-Regular.otf");
   margin: 0 auto;
   font-size: 300%;
   color: #17140d;
-  src: url("../../noraharhen.github.io/SportingGrotesque-Regular.otf") format("opentype");
-
 }
 
 .bio {
   font-family:"Work Sans";
+  src: url("./WorkSans-Regular.otf");
   margin: 0 auto;
   font-size: 150%;
   color: #17140d;
   border-bottom: 2px solid #17140d;
-  src: url("../../noraharhen.github.io/WorkSans-Regular.otf") format("opentype");
 
 }
 
@@ -90,7 +89,7 @@ h3 {
 
 h6 {
 font-family:"Work Sans";
+src: url("./WorkSans-Regular.otf");
 display:inline-block;
 color:#17140d;
-src: url("../../noraharhen.github.io/WorkSans-Regular.otf") format("opentype");
 }
