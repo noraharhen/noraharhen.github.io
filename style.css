@@ -26,7 +26,7 @@ body {
   li a {
 
     font-family:"Work Sans";
-    src: url("./WorkSans-Regular.otf")
+    src: url("./fonts/WorkSans-Regular.otf");
     font-size: 200%;
     display: block;
     color: #17140d;
@@ -44,7 +44,7 @@ body {
 
 .center {
   margin: auto;
-  width: 75%;
+  width: 60%;
   padding: 5px;
 }
 
@@ -57,7 +57,7 @@ body {
 
 .myname {
   font-family:"Sporting Grotesque";
-  src: url("./SportingGrotesque-Regular.otf");
+  src: url("./fonts/SportingGrotesque-Regular.otf");
   margin: 0 auto;
   font-size: 300%;
   color: #17140d;
@@ -65,7 +65,7 @@ body {
 
 .bio {
   font-family:"Work Sans";
-  src: url("./WorkSans-Regular.otf");
+  src: url("./fonts/WorkSans-Regular.ttf");
   margin: 0 auto;
   font-size: 150%;
   color: #17140d;
@@ -89,7 +89,34 @@ h3 {
 
 h6 {
 font-family:"Work Sans";
-src: url("./WorkSans-Regular.otf");
+src: url("./fonts/WorkSans-Regular.ttf");
 display:inline-block;
 color:#17140d;
+}
+
+ins:hover {
+  position:relative;
+}
+ins:hover:after {
+  display:block;
+  position:absolute;
+  border:3px solid black;
+  box-shadow:10px 10px black;
+}
+
+#nora:hover:after {
+  content: url("./images/cat_small.gif");
+  width:300px;
+  height:169px;
+  top:-200px;
+  left:400px;
+}
+
+
+#learning:hover:after {
+  content: url("./images/learning_test.gif");
+  width:170px;
+  height:169px;
+  top:-300px;
+  left:100px;
 }
