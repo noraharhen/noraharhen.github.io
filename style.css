@@ -2,6 +2,16 @@
 #F2E77E yellow
 #17140d black  */
 
+@font-face {
+  font-family:"Work Sans";
+  src: url("./fonts/WorkSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family:"Sporting Grotesque";
+  src: url("./fonts/Sporting_Grotesque-Regular_web.ttf") format("truetype");
+}
+
 body {
   background-color:#F2E77E;}
 
@@ -24,9 +34,7 @@ body {
 }
 
   li a {
-
     font-family:"Work Sans";
-    src: url("./fonts/WorkSans-Regular.ttf");
     font-size: 200%;
     display: block;
     color: #17140d;
@@ -57,7 +65,6 @@ body {
 
 .myname {
   font-family:"Sporting Grotesque";
-  src: url("./fonts/Sporting_Grotesque-Regular_web.ttf");
   margin: 0 auto;
   font-size: 300%;
   color: #17140d;
@@ -65,7 +72,6 @@ body {
 
 .bio {
   font-family:"Work Sans";
-  src: url("./fonts/WorkSans-Regular.ttf");
   margin: 0 auto;
   font-size: 150%;
   color: #17140d;
@@ -89,7 +95,6 @@ h3 {
 
 h6 {
 font-family:"Work Sans";
-src: url("./fonts/WorkSans-Regular.ttf");
 display:inline-block;
 color:#17140d;
 }
