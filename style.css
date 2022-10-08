@@ -26,7 +26,7 @@ body {
   li a {
 
     font-family:"Work Sans";
-    src: url("./fonts/WorkSans-Regular.otf");
+    src: url("./fonts/WorkSans-Regular.ttf");
     font-size: 200%;
     display: block;
     color: #17140d;
@@ -57,7 +57,7 @@ body {
 
 .myname {
   font-family:"Sporting Grotesque";
-  src: url("./fonts/SportingGrotesque-Regular.otf");
+  src: url("./fonts/Sporting_Grotesque-Regular_web.ttf");
   margin: 0 auto;
   font-size: 300%;
   color: #17140d;
