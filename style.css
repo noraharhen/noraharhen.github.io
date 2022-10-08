@@ -1,12 +1,16 @@
+/* #FEFDFD white
+#F2E77E yellow
+#17140d black  */
+
 body {
-  background-color:#FEFDFD;}
+  background-color:#F2E77E;}
 
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #FEFDFD;
+    background-color: #F2E77E;
     border-bottom: 2px solid #17140d;
 
   }
@@ -22,7 +26,7 @@ body {
   li a {
 
     font-family:"Work Sans";
-    font-size: 100%;
+    font-size: 200%;
     display: block;
     color: #17140d;
     text-align: center;
@@ -33,21 +37,15 @@ body {
 
   /* Change the link color to #111 (black) on hover */
   li a:hover {
-    background-color: #FEFDFD;
-    color: #FFC300;
+    background-color: #F2E77E;
+    color: #FEFDFD;
 
   }
 
 .center {
   margin: auto;
-  width: 50%;
+  width: 75%;
   padding: 5px;
-}
-
-.center2 {
-  margin: auto;
-  width: 10%;
-  padding: 10px;
 }
 
 
@@ -60,7 +58,7 @@ body {
 .myname {
   font-family:"Sporting Grotesque";
   margin: 0 auto;
-  font-size: 200%;
+  font-size: 300%;
   color: #17140d;
   src: url("SportingGrotesque-Regular.otf") format("opentype");
 
@@ -69,7 +67,7 @@ body {
 .bio {
   font-family:"Work Sans";
   margin: 0 auto;
-  font-size: 100%;
+  font-size: 150%;
   color: #17140d;
   border-bottom: 2px solid #17140d;
   src: url("WorkSans-Regular.otf") format("opentype");
