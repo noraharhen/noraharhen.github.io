@@ -110,8 +110,8 @@ ins:hover:after {
 }
 
 #nora:hover:after {
-  content: url("./images/cat_small.gif");
-  width:300px;
+  content: url("./images/nora.jpg");
+  width:169px;
   height:169px;
   top:-200px;
   left:400px;
