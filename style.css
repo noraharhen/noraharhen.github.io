@@ -1,135 +1,187 @@
-/* #FEFDFD white
-#F2E77E yellow
-#17140d black  */
 
 @font-face {
-  font-family:"Work Sans";
-  src: url("./fonts/WorkSans-Regular.ttf") format("truetype");
-}
+  font-family:"Francesco Regular";
+  src: url("./fonts/Francesco-Regular-Trial.otf") format("truetype");
+  }
 
-@font-face {
-  font-family:"Sporting Grotesque";
-  src: url("./fonts/Sporting_Grotesque-Regular_web.ttf") format("truetype");
-}
+  @font-face {
+  font-family:"Francesco Italic";
+  src: url("./fonts/Francesco-Italic-Trial.otf") format("truetype");
+  }
 
-body {
-  background-color:#F2E77E;}
+  @font-face {
+  font-family:"Cogito Regular";
+  src: url("./fonts/Cogito-Regular-Trial.otf") format("truetype");
+  }
 
-  ul {
-    list-style-type: none;
+  body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #F2E77E;
-    border-bottom: 2px solid #17140d;
-
+    font-family:"Cogito Regular";
+    background: #f9f9f9;
+    color: #014b9b;
+    line-height: 1.6;
   }
 
-  li {
-    float: right;
+  /* --- navigation bar --- */
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.0rem 2rem;
+    background: #f9f9f9;
+    border-bottom: 1px dotted #014b9b;
+    max-width: 1100px;
+    margin: 0 auto;
   }
 
-  li a .ai {
-    font-size:1.5em;
-}
+  .navbar .name {
+    font-family: "Francesco Regular";
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: #014b9b;
+  }
 
-  li a {
-    font-family:"Work Sans";
-    font-size: 200%;
-    display: block;
-    color: #17140d;
-    text-align: center;
-    padding: 2px 16px;
+  .navbar .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .navbar .nav-links a {
+    font-family: "Francesco Regular";
+    font-size: 1rem;
+    color: #014b9b;
     text-decoration: none;
+    transition: color 0.2s ease;
   }
 
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #F2E77E;
-    color: #FEFDFD;
+  .navbar .nav-links a:hover {
+    color: #e8e4ec;
+  }
+  
 
+  .main-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* equal width columns */
+    grid-auto-rows: auto;
+    gap: 1.5rem;
   }
 
-.center {
-  margin: auto;
-  width: 60%;
-  padding: 5px;
-}
+  /* --- top row --- */
 
+  .photo-wrapper {
+    grid-column: 1;
+    grid-row: 1;
+    overflow: hidden;
+    background: #ddd;
+  }
 
-.mypic {
-  border:3px solid #17140d;
-  box-shadow:10px 10px #17140d;
-  width: 300px;
-}
+  .photo-wrapper img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-.myname {
-  font-family:"Sporting Grotesque";
-  margin: 0 auto;
-  font-size: 300%;
-  color: #17140d;
-}
+  .intro {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 1.5rem;
+    background: #f9f9f9;
+  }
 
-.bio {
-  font-family:"Work Sans";
-  margin: 0 auto;
-  font-size: 150%;
-  color: #17140d;
-  border-bottom: 2px solid #17140d;
+  /* --- image buttons --- */
 
-}
+  .image-button {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 1px dotted #014b9b;
+    background: #f9f9f9;
+    color: #014b9b;
+    font-family:"Francesco Regular";
+    min-height: 180px;
+    transition: background 0.25s ease;
+  }
 
-.socialmedia {
-  width:100%;
+  /* place buttons in the grid like the sketch */
+  .btn-1 { grid-column: 1; grid-row: 2; }
+  .btn-2 { grid-column: 2; grid-row: 2; }
+  .btn-3 { grid-column: 1; grid-row: 3; }
+  .btn-4 { grid-column: 2; grid-row: 3; }
 
-}
+  .image-button img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
 
-h3 {
-  margin:10px;
-  color: #17140d;
-  padding-left: 50px;
-  font-size: 100%;
-}
+  .image-button .overlay {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    min-height: 180px;
 
+    background: rgba(154, 173, 193, 0);
+    color: #014b9b;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: background 0.3s ease, color 0.3s ease;
+    z-index: 1;
+  }
 
+  .image-button:hover {
+    background: #014b9b;
+  }
 
-h6 {
-font-family:"Work Sans";
-display:inline-block;
-color:#17140d;
-}
+  .image-button:hover img {
+    opacity: 1;
+  }
 
-ins:hover {
-  position:relative;
-}
-ins:hover:after {
-  display:block;
-  position:absolute;
-  border:3px solid black;
-  box-shadow:10px 10px black;
-}
+  .image-button:hover .overlay {
+    background: rgba(154, 173, 193, 0.9);
+    color: #f9f9f9;
+  }
 
-#nora:hover:after {
-  content: url("./images/nora.jpg");
-  width:169px;
-  height:169px;
-  top:-200px;
-  left:400px;
-}
+  /* --- responsive: stack on small screens --- */
 
+  @media (max-width: 800px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1rem 1.5rem;
+    }
 
-#learning:hover:after {
-  content: url("./images/learning_test.gif");
-  width:170px;
-  height:169px;
-  top:-300px;
-  left:100px;
-}
+    .navbar .nav-links {
+      gap: 1.5rem;
+    }
 
-#decision:hover:after {
-  content: url("./images/snacks.gif");
-  width:400px;
-  height:400px;
-  top:-300px;
-  left:100px;
-}
+    .main-grid {
+      grid-template-columns: 1fr;
+      padding: 1.5rem;
+    }
+
+    .photo-wrapper,
+    .intro,
+    .btn-1,
+    .btn-2,
+    .btn-3,
+    .btn-4 {
+      grid-column: 1;
+    }
+  }
