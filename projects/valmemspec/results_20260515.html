@@ -570,14 +570,15 @@ learning rate.</li>
 </div>
 <div id="lets-first-consider-old-trials" class="section level3">
 <h3>Let’s first consider old trials…</h3>
-<p>The following regression was run</p>
-<p>response (old, similar, new) ~ PE sign * PE magnitude * Valence Bias
-* Age + (1 + PE sign * PE magnitude | ID) Here we treat
-<strong>old</strong> as the reference response category because it is
-the accurate response for these trials. Here’s a table with the results
-of the regression (source: <code>old_mblogit_summary.txt</code>). In the
-tables below, green shading marks <em>p</em> &lt; .05 and yellow marks
-.05 ≤ <em>p</em> &lt; .10.</p>
+<p>The following regression was run: <br> <br> response (old, similar,
+new) ~ PE sign * PE magnitude * Valence Bias * Age +
+prop_chose_old_when_new + (1 + PE sign * PE magnitude | ID). <br> <br>
+Here we treat <strong>old</strong> as the reference response category
+because it is the accurate response for these trials. Here’s a table
+with the results of the regression (source:
+<code>old_mblogit_summary.txt</code>). In the tables below, green
+shading marks <em>p</em> &lt; .05 and yellow marks .05 ≤ <em>p</em> &lt;
+.10.</p>
 <table class="table table-striped table-hover" style="width: auto !important; max-width: 700px; margin: auto; font-size: 14px;">
 <caption>
 Similar vs. old (reference response: old) — Shading: p &lt; .05 (green);
@@ -1246,12 +1247,11 @@ trials (pe sign x valence asymm x age, similar: p=.084; pe_sign x
 valence asymm x age, old: p=.074) ### Let’s now consider lure
 trials…</li>
 </ul>
-<p>The following regression was run on lure trials:</p>
-<p><code>choice</code> (old, similar, new) ~ PE sign * PE magnitude *
-Valence Bias * Age + similar-on-new proportion + (1 + PE sign * PE
-magnitude | ID)</p>
-<p>Here we treat <strong>similar</strong> as the reference response
-category. Coefficient tables (source:
+<p>The following regression was run on lure trials: <br> <br>
+<code>choice</code> (old, similar, new) ~ PE sign * PE magnitude *
+Valence Bias * Age + prop_chose_sim_when_new + (1 + PE sign * PE
+magnitude | ID) <br> <br> Here we treat <strong>similar</strong> as the
+reference response category. Coefficient tables (source:
 <code>lure_mblogit_summary.txt</code>; same shading as above: green
 <em>p</em> &lt; .05, yellow .05 ≤ <em>p</em> &lt; .10):</p>
 <table class="table table-striped table-hover" style="width: auto !important; max-width: 700px; margin: auto; font-size: 14px;">
