@@ -1,0 +1,51 @@
+<style>
+:root {
+  --results-sidebar-width: 10rem;
+  --results-sidebar-gap: 5rem;
+  --results-main-width: 75vw;
+}
+
+.results-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: var(--results-sidebar-width);
+  min-height: 100vh;
+  padding: 1.25rem 1rem;
+  background: #f5f5f5;
+  border-right: 1px solid #ddd;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.results-sidebar-heading {
+  margin: 0 0 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.results-sidebar a {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.results-sidebar a:hover {
+  text-decoration: underline;
+}
+
+.container-fluid.main-container {
+  padding-left: calc(var(--results-sidebar-width) + var(--results-sidebar-gap));
+  max-width: calc(
+    var(--results-sidebar-width) + var(--results-sidebar-gap) + var(--results-main-width)
+  );
+  box-sizing: border-box;
+}
+</style>
+
+<nav class="results-sidebar" aria-label="Results by date">
+  <p class="results-sidebar-heading">Past Meetings</p>
+  <a href="results_20260515.html">05/15/26</a>
+</nav>
